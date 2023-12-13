@@ -1,185 +1,103 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!--================================== Head Information ==================================-->
-        <!------ Meta Stuff ------>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Nutrição personalizada na ponta dos seus dedos."
-        />
-        <meta
-            name="keywords"
-            content="Saúde, Nutrição, Equilíbrio, Remoto, Alimentação, Orientação"
-        />
-        <meta name="author" content="NutriVue" />
-        <!------ Setting the favicon ------>
-        <link
-            rel="shortcut icon"
-            href="images/favicon.png"
-            type="image/x-icon"
-        />
-        <!------ Getting icons from remixicon ------>
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-            rel="stylesheet"
-        />
-
-        <!------ CSS ------>
-        <link rel="stylesheet" href="css/main.css" />
-        <!------ Setting page title ------>
-        <title>NutriVue</title>
-    </head>
-    <body>
-        <!--==================================  Navbar  ==================================-->
-        <header>
-            <nav class="container navbar">
-                <!------ Navbar logo ------>
-                <a href="#">
-                    <img src="images/logo.png" class="navbar__logo" />
-                </a>
-                <!------ Navbar list ------>
-                <ul class="navbar__list">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#equipa">Equipa</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NutriVue</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+             <h1 class="logo"><a href="index.html">NutriVue</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Privacy</a></li>
                 </ul>
             </nav>
-        </header>
-        <!--==================================  Begin main  ==================================-->
-        <main>
-            <!--==================================  "Sobre"  ==================================-->
-            <section id="sobre" class="container sobre__container">
-                <!------ "Sobre" introduction ------>
-                <div class="sobre__text">
-                    <h2 class="title">Porquê NutriVue?</h2>
-                    <p class="description">
-                        Oferecemos a ligação perfeita entre nutricionistas
-                        especializados e utilizadores ávidos por uma mudança
-                        positiva na sua saúde. Junte-se a nós e comece a jornada
-                        rumo a uma alimentação melhor e um bem-estar duradouro.
-                    </p>
-                </div>
-                <!------ "Problemas" ------>
-                <div class="sobre__problems-solutions">
-                    <div>
-                        <h3>Problemas</h3>
-                        <p>
-                            <i>&#x2717;</i>
-                            Alimentação inadequada
-                        </p>
-                        <p>
-                            <i>&#x2717;</i>
-                            Consultas nutricionais a preços elevados
-                        </p>
-                        <p>
-                            <i>&#x2717;</i>
-                            Falta de orientação
-                        </p>
-                        <p>
-                            <i>&#x2717;</i>
-                            Desafios relacionados a restrições dietéticas
-                        </p>
+        </div>
+    </div>
+    
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Agenciamento Nutricional</h1>
+                <p>Ferramenta digital de alto rigor científico. 
+                    Permite criar e seguir planos alimentares
+                    personalizados sob o escrutínio
+                    de entidades reguladoras da área
+                    da nutrição.</p>
+                <a href="features.html" class="btn btn-outline">Read More +</a>
+            </div>
+
+            <div class="showcase-form card">
+                <h2>Create Account</h2>
+                 <form>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="name" required>
                     </div>
-                    <!------ "Soluções" ------>
-                    <div>
-                        <h3>Soluções</h3>
-                        <p>
-                            <i>&#x2713;</i>
-                            Planos alimentares personalizados
-                        </p>
-                        <p>
-                            <i>&#x2713;</i>
-                            Consultas a preços acessíveis
-                        </p>
-                        <p>
-                            <i>&#x2713;</i>
-                            Orientação nutricional especializada
-                        </p>
-                        <p>
-                            <i>&#x2713;</i>
-                            Sugestões de receitas personalizadas
-                        </p>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="email" required>
                     </div>
+                    <div class="form-control">
+                        <input type="text" name="password" placeholder="password" required>
+                    </div>
+                    <input type="submit" value="Register" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>28,400</h3>
+                    <p class="text-secondary">Utilizadores</p>
                 </div>
-            </section>
-            <!--==================================  "Equipa"  ==================================-->
-            <section id="equipa" class="container">
-                <div class="equipa__text">
-                    <h2 class="title">A nossa equipa</h2>
-                    <p class="description">
-                        Conheça os membros que tornam este projeto numa
-                        realidade!
-                    </p>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>100 TB</h3>
+                    <p class="text-secondary">Informação</p>
                 </div>
-                <!------ Team member list ------>
-                <ul class="equipa__portrait__grid">
-                    <li>
-                        <img
-                            src="images/macaco.jpg"
-                            class="equipa__portrait__image"
-                        />
-                        <h3 class="equipa__portrait__text">
-                            Francisco Tavares
-                        </h3>
-                    </li>
-                    <li>
-                        <img
-                            src="images/macaco.jpg"
-                            class="equipa__portrait__image"
-                        />
-                        <h3 class="equipa__portrait__text">Miguel Leopoldo</h3>
-                    </li>
-                    <li>
-                        <img
-                            src="images/macaco.jpg"
-                            class="equipa__portrait__image"
-                        />
-                        <h3 class="equipa__portrait__text">Miguel Miranda</h3>
-                    </li>
-                    <li>
-                        <img
-                            src="images/macaco.jpg"
-                            class="equipa__portrait__image"
-                        />
-                        <h3 class="equipa__portrait__text">Rodrigo Sá</h3>
-                    </li>
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>50</h3>
+                    <p class="text-secondary">Parceiros</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>NutriVue
+                </h1>
+                <p>Copyright &copy; 2023</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Privacy</a></li>
                 </ul>
-            </section>
-            <!--==================================  "Contactos"  ==================================-->
-            <section id="contactos" class="container">
-                <!------ "Contactos" introduction ------>
-                <h2 class="title">Contactos</h2>
-                <p class="description">
-                    Entre em contacto connosco! Estamos ansiosos por receber
-                    notícias suas. Atualmente, estamos disponíveis apenas
-                    através do Instagram. Sinta-se à vontade para nos seguir,
-                    enviar mensagens ou interagir connosco por lá. A nossa
-                    equipa está pronta para responder às suas questões e ouvir
-                    os seus comentários. Aguardamos o seu contacto!
-                </p>
-                <!------ Instagram Link ------>
-                <a
-                    href="https://www.instagram.com/nutrivue/"
-                    target="_blank"
-                    class="contactos__links"
-                >
-                    <i class="ri-instagram-line"></i>
-                    NutriVue
-                </a>
-            </section>
-        </main>
-        <!--==================================  End main  ==================================-->
-        <!--==================================  Footer  ==================================-->
-        <footer class="container">
-            <!------ Legal notice ------>
-            <p class="legal-notice">
-                &#9888; Aviso legal: Os conteúdos constantes neste site foram
-                realizados por alunos no âmbito de uma disciplina - Processos de
-                Gestão e Inovação - do 3º ano da licenciatura de Engenharia
-                Informática, pelo que a FCTUC não se responsabiliza pelo seu
-                conteúdo.
-            </p>
-        </footer>
-    </body>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/nutrivue/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
